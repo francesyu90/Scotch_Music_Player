@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ElectronService } from 'ngx-electron';
+import { AppService } from './app.service';
 
 @Component({
   selector: 'app-root',
@@ -8,14 +8,10 @@ import { ElectronService } from 'ngx-electron';
 })
 export class AppComponent implements OnInit {
 
-  constructor(private _electronService: ElectronService) {}
+  constructor(private _appService: AppService) {}
 
   ngOnInit() {
-    var menu = this._electronService.remote.Menu.buildFromTemplate([{
-      role: 'quit'
-    }]);
-    this._electronService.remote.Menu.setApplicationMenu(menu);
+    this._appService.initMenu();
   }
-
-  title = 'app';
+  
 }

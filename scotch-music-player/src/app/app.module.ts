@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { AppService } from './app.service';
 
 // newly added external modules
 import {NgxElectronModule} from 'ngx-electron';
@@ -16,7 +17,9 @@ import {NgxElectronModule} from 'ngx-electron';
     BrowserModule,
     NgxElectronModule
   ],
-  providers: [],
+  providers: [
+    AppService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
