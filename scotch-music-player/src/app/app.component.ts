@@ -13,5 +13,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this._appService.initMenu();
   }
-  
+
+  title = this._appService.getAppName();
+
 }

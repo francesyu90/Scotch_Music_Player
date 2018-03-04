@@ -13,4 +13,8 @@ export class AppService {
     this._electronService.remote.Menu.setApplicationMenu(menu);
   }
 
+  getAppName() {
+    return "Scotch Music Player";
+  }
+
 }
