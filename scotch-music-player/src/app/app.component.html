@@ -1,32 +1,20 @@
 <div>
     <mat-toolbar>
-        <!-- <mat-toolbar-row>
-            <span><mat-icon>audiotrack</mat-icon></span>
-            <span>{{ title }}</span>
-        </mat-toolbar-row>
-
-        <mat-toolbar-row>
-            <span class="example-fill-remaining-space"></span>
-            <span>Second Row</span>
-        </mat-toolbar-row> -->
-
 
         <span><mat-icon>audiotrack</mat-icon></span>
         <span>{{ title }}</span>
         <span class="example-fill-remaining-space"></span>
 
-        <!-- 
-        <button mat-raised-button color="teal">Of</button>
-        <button mat-raised-button color="#009688">Of</button> -->
-        <button mat-raised-button color="warn">Of</button>
-        <!-- <button mat-raised-button color="">Of</button> -->
+        <button mat-mini-fab color="warn">
+            <mat-icon>close</mat-icon>
+        </button>
 
 
     </mat-toolbar>
 
     <span class="done">
       <button mat-fab color="primary">
-        <mat-icon>check circle</mat-icon>
+        <mat-icon>menu</mat-icon>
       </button>
     </span>
 </div>
