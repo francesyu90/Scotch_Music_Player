@@ -7,6 +7,8 @@ import { AppService } from './app.service';
 
 // newly added external modules
 import {NgxElectronModule} from 'ngx-electron';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.module';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import {NgxElectronModule} from 'ngx-electron';
   ],
   imports: [
     BrowserModule,
-    NgxElectronModule
+    NgxElectronModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [
     AppService
