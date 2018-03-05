@@ -9,7 +9,8 @@ function createWindow() {
         width: 360,
         height: 570,
         backgroundColor: '#ffffff',
-        icon: `file://${__dirname}/dist/assets/logo.png`
+        icon: `file://${__dirname}/dist/assets/logo.png`,
+        frame: false
     })
 
 

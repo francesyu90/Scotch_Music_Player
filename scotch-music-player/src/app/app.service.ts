@@ -6,15 +6,12 @@ export class AppService {
 
   constructor(private _electronService: ElectronService) {}
 
-  initMenu() {
-    var menu = this._electronService.remote.Menu.buildFromTemplate([{
-      role: 'quit'
-    }]);
-    this._electronService.remote.Menu.setApplicationMenu(menu);
-  }
-
   getAppName() {
     return "Scotch Music Player";
+  }
+
+  terminateApp() {
+    this._electronService.remote.app.quit();
   }
 
 }

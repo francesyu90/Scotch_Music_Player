@@ -5,7 +5,7 @@
         <span>{{ title }}</span>
         <span class="example-fill-remaining-space"></span>
 
-        <button mat-mini-fab color="warn">
+        <button mat-mini-fab color="warn" (click)="closeWindow()">
             <mat-icon>close</mat-icon>
         </button>
 
@@ -13,8 +13,22 @@
     </mat-toolbar>
 
     <span class="done">
-      <button mat-fab color="primary">
+      <!-- <button mat-fab color="primary">
         <mat-icon>menu</mat-icon>
+      </button> -->
+
+      <!-- <mat-menu #appMenu="matMenu">
+        <button mat-menu-item>Settings</button>
+        <button mat-menu-item>Help</button>
+      </mat-menu>
+        
+      <button mat-fab [matMenuTriggerFor]="appMenu" color="primary">
+        <mat-icon>menu</mat-icon>
+      </button> -->
+
+      <button mat-fab color="primary">
+        <mat-icon>search</mat-icon>
       </button>
+        
     </span>
 </div>

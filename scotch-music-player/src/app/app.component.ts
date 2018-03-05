@@ -11,7 +11,10 @@ export class AppComponent implements OnInit {
   constructor(private _appService: AppService) {}
 
   ngOnInit() {
-    this._appService.initMenu();
+  }
+
+  closeWindow() {
+    this._appService.terminateApp();
   }
 
   title = this._appService.getAppName();
