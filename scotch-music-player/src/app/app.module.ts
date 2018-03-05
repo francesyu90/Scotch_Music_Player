@@ -9,11 +9,13 @@ import { AppService } from './app.service';
 import {NgxElectronModule} from 'ngx-electron';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { MusicBoxComponent } from './music-box/music-box.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MusicBoxComponent
   ],
   imports: [
     BrowserModule,
